@@ -1,33 +1,117 @@
 /* Journey to the Center of the Earth Practicum */ 
 /* Shahzeb khan*/ 
-header {
 
-
-    color: aliceblue;
-
-}
 body {
-    background-color: #886644;
-}
-#hero { 
-    padding-right: 1px;
-    border:3px solid;
     
-
-}
+    background-image: linear-gradient(180deg,#765729, black);
     
-
-
-
-nav {
-
 }
-main {
-
+a {
+    color: black;
+    text-decoration: none;
 }
-aside {
+a:hover {
+    color: brown;
+    text-decoration: overline;
+}
+span[lang-fr], span[langeis], span[lang-it] {
+    font-style: italic; 
+}
 
+.character {
+    font-weight: bold;
+}
+h2 {
+    border-bottom: 2px dashed black;
+}
+header, nav, main, aside, footer, #hero {
+    margin: .35rem;
+    padding: 1.25em;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: 2px solid #886644;
+    box-shadow: 10px 10px 25px rgba(0,0,0, .5)inset;
+}
+header{
+    text-align: center;
+    background-image:url(../img/cave.jpg);
+    background-position:center;
+    background-size:110%;
+    border-top-right-radius:25px;
+    border-top-left-radius:25px;
+    box-shadow: 20px 20px 20px black;
+    padding: Opx;
+}
+header h1 {
+    padding: 15px;
+    color: #fff;
+    font-family: georgia;
+    text-shadow: 5px 5px 5px black;
+}
+nav ul {
+list-style: none;
+margin-top:0px;
+margin-left: 0;
+margin-bottom: 0;
+padding-left: 0;
+text-align:center;
+}
+nav li {
+display: inline;
+margin-left: 0;
+border-left: 3px double black;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+#cover {
+    width:200px;
+    float:left;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
 }
 footer {
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 
 }
+#cryptogram {
+    text-align:left;
+}
+ #cryptogram img {
+    width:100%;
+    max-width:30rem;
+    }
+
+ #cryptogram figcaption {
+    font-style:italic;
+    }
+    
+.submission {
+    border-style: solid;
+    margin: 15px;
+}
+    
+
+@media screen and (min-width: 786px ) {
+body {
+display:grid;
+grid-template-columns: auto 20rem;
+grid-template-areas:
+
+"header header"
+"nav nav"
+"main aside"
+"footer footer" 
+;
+max-width:1200px;
+margin-left:auto;
+margin-right:auto;
+}
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main; }
+aside { grid-area: aside; }
+footer { grid-area: footer; } 
+}
+
+    
