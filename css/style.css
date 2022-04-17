@@ -40,6 +40,7 @@ header{
     box-shadow: 20px 20px 20px black;
     padding: Opx;
 }
+
 header h1 {
     padding: 15px;
     color: #fff;
@@ -97,26 +98,4 @@ footer {
 }
 .signature {
     text-align: center;
-    font-style: italic;
-} 
-
-@media screen and (min-width: 768px ) 
-{
-header h1 {
-    font-size: 3rem;
-}
-aside {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
-aside h2 {
-    grid-column: 1/-1;
-}
-aside .signature {
-    text-align: center;
-}
-aside .opinion {
-    text-align: center;
-}
-}
+    font-style: italic; }
